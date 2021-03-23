@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+		<title>La Aceitera</title>
+		<link rel="stylesheet" type="text/css" href="estilos.css" media="all">
+	</head>
+
+	<body>
+		<div id="contenido">
+
+			<!--
+			************************************************
+			*                  CABECERA                    *
+			************************************************
+			-->
+
+			<p class="i" id="logo">
+				<span id="la">La </span>
+				<span id="aceitera">Aceitera</span> 
+				<span id="lema"><br>Tu tienda de aceite en Internet</span>
+			</p>
+
+			<h1 class="t1">Cesta de la compra</h1>
+
+			<!--
+			************************************************
+			*      Contenido de la CESTA de la compra      *
+			************************************************
+			-->
+
+			<div id="articulos">
+				<h2 class="t2">Artículos en la cesta</h2>
+
+				<table id="tabla_compra" summary="Muestra la información relativa a los artículos de la cesta.">
+					<caption>Artículos en la cesta</caption>
+					<thead>
+						<tr id="conceptos">
+							<th id="prod">Producto</th>
+							<th id="pvp"><acronym title="Precio de Venta al Público">PVP</acronym></th>
+							<th id="uds"><abbr title="Unidades">Uds.</abbr></th>
+							<th id="eur"><abbr title="Euros">Eur.</abbr></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td headers="prod"><strong>Botella Oleum 500 ml</strong> (en caja de 12 unidades)</td>
+							<td headers="pvp">45 €</td>
+							<td headers="uds">2</td>
+							<td headers="eur">90 €</td>
+						</tr>
+
+						<tr>
+							<td headers="prod"><strong>Aceitera de cristal Fenicia 500 ml</strong></td>
+							<td headers="pvp">100 €</td>
+							<td headers="uds">1</td>
+							<td headers="eur">100 €</td>
+						</tr>
+
+						<tr>
+							<td headers="prod"><strong>Garrafa Pet 5 litros</strong>(en caja de 3 unidades)</td>
+							<td headers="pvp">52,97 €</td>
+							<td headers="uds">1</td>
+							<td headers="eur">52,97€</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr id="total">
+							<td colspan="3" align="right"><strong>Precio Total</strong></td>
+							<td>242,97 €</td>
+						</tr>
+					</tfoot>
+				</table>
+
+				<p id="info_en" lang="en">Non european customers can request a VAT refund</p>
+			</div>
+
+
+			<!--
+			************************************************
+			*             DATOS de facturación             *
+			************************************************
+			-->
+
+			<div id="datos">
+				<h2 class="t2">Datos de facturación</h2>
+				<p class="info"> <span class="i">i</span> Los campos marcados en rojo son obligatorios.</p>
+
+				<form action="#">
+					<fieldset id="datos_personales">
+						<legend>Datos personales</legend>
+						<div class="campo_form">
+							<label>Empresa </label>
+							<input id="empresa" name="empresa" type="text" acceskey="e" tabindex="1">
+						</div>
+						<div class="campo_form">
+							<label class="obligatorio">Nombre </label>
+							<input id="nombre" name="nombre" type="text" acceskey="n" tabindex="2">
+						</div>
+						<div class="campo_form">
+							<label class="obligatorio">Apellidos </label>
+							<input id="apellidos" name="apellidos" type="text" acceskey="a" tabindex="3">
+						</div>
+						<div class="campo_form">
+							<label class="obligatorio">e-mail </label>
+							<input id="email" name="email" type="text" acceskey="m" tabindex="4">
+						</div>
+						<div class="campo_form">
+							<label class="obligatorio"><abbr title="Teléfono">Tlf.</abbr> de contacto </label>
+							<input id="tlf" name="tlf" type="text" acceskey="t" tabindex="5">
+						</div>
+						<div class="campo_form">
+							<label><acronym title="Número de identificación fiscal">NIF</acronym>/<acronym title="Código de identificación fiscal">CIF</acronym> </label>
+							<input id="nif" name="nif" type="text" acceskey="i" tabindex="6">
+						</div>
+					</fieldset>
+
+					<fieldset id="datos_envio">
+						<legend>Datos de envío</legend>
+						<div class="campo_form">
+							<label class="obligatorio">Dirección </label>
+							<input id="dir" name="dir" type="text" acceskey="d" tabindex="7">
+						</div>
+						<div class="campo_form">
+							<label class="obligatorio">Localidad </label>
+							<input id="localidad" name="localidad" type="text" acceskey="l" tabindex="8">
+						</div>
+						<div class="campo_form">
+							<label class="obligatorio">Provincia </label>
+							<input id="provincia" name="provincia" type="text" acceskey="p" tabindex="9">
+						</div>
+						<div class="campo_form">
+							<label class="obligatorio"><abbr title="Código postal">CP</abbr> </label>
+							<input id="cp" name="cp" type="text" acceskey="c" tabindex="10">
+						</div>
+						<div class="campo_form">
+							<label>Horario de entrega </label>
+							<select name="horario" acceskey="h" tabindex="11">    
+								<option selected="selected" value="all">Todo el día</option>    
+								<option value="a">De 9:00 a 14:00 horas</option>      
+								<option value="b">De 14:00 a 19:00 horas</option>      
+							</select>
+						</div>
+					</fieldset>
+
+					<fieldset id="observaciones">
+						<legend>Observaciones</legend>
+						<textarea rows="6" cols="80" id="obs" name="obs" acceskey="o" tabindex="12"></textarea>
+					</fieldset>
+
+					<p id="submit">
+						<input value="Realizar Pedido" type="submit" acceskey="r" tabindex="13">
+					</p>
+				</form>
+
+
+			<!--
+			************************************************
+			*           Información de GARANTIAS           *
+			************************************************
+			-->
+
+			<div id="garantias">
+				<h2 class="t2">Garantías</h2>
+				<h3 class="t3">Devolución o anulación de pedido</h3>
+				<p>Puedes devolver un producto o pedido que por algún motivo no satisface 
+				tus expectativas.</p>
+				<p>Plazo de tramitación: Dispones de 10 días hábiles para gestionar la devolución de un producto 
+				o pedido desde que su estado es Entregado en Mi Cuenta.</p>
+				<p>Estado del pedido: Desde que te llega hasta que aparece en la web como 
+				Entregado pueden pasar hasta 48 horas, puesto que es el tiempo que transcurre 
+				desde que el operador logístico realiza la entrega hasta que nos 
+				lo comunica y lo actualizamos en nuestra base de datos. Así, si tu 
+				pedido no aparece en la lista del apartado Devoluciones, te aconsejamos 
+				que lo vuelvas a intentar pasado este plazo.</p>
+				<p>Condiciones del paquete: El producto debe estar en perfecto estado, con 
+				el embalaje y etiquetado original y en la misma caja o sobre que te hemos 
+				enviado, o en su defecto en algún formato similar que garantice la 
+				devolución en perfecto estado.</p>
+				<p>Albarán: Debes incluir una copia del albarán de devolución 
+				dentro de la caja que pasaremos a recoger. Puedes descargarlo desde el e-mail 
+				de confirmación de tu devolución o durante el proceso a través 
+				de la web.</p>
+				<p>Abono: Una vez recibamos la devolución en nuestros almacenes procederemos 
+				a abonarte el importe correspondiente. En 48 horas verás reflejado 
+				el ingreso en el extracto de movimientos de tu tarjeta de crédito 
+				o de tu cuenta bancaria si pagaste con tarjeta de débito.</p>
+				<p></p>
+
+				<h3 class="t3">Seguridad</h3>
+				<p>Tus datos se transmiten cifrados a través de una plataforma de pago totalmente segura.</p>
+
+				<h3 class="t3">Privacidad</h3>
+				<p>Los Socios y Usuarios se comprometen a navegar por la página web y a utilizar el contenido de 
+				buena fe.</p>
+				<p>En cumplimiento de lo establecido en la Ley Orgánica 15/1999, de Protección de Datos de 
+				Carácter Personal, le informamos de que la cumplimentación de cualquier formulario existente en Sitio 
+				Web <a href="http://www.laaceitera.com" acceskey="w" tabindex="14">www.laaceitera.com</a> o la remisión de un correo electrónico 
+				a cualquiera de nuestros buzones implica la aceptación de esta política 
+				de privacidad, así como la autorización a La Aceitera para que 
+				trate los datos personales que nos facilite.</p>
+				<p>Los datos de los Socios serán utilizados para el envío a 
+				través de email de las ventas que realice La Aceitera y para la entrega 
+				de los compras.</p>
+				<p>Por la mera visita a la web, los Usuarios no facilitan información 
+				personal alguna ni queda obligado a facilitarla.</p>
+				<p>El ordenador donde está alojada la web utiliza cookies para mejorar 
+				el servicio prestado por La Aceitera. Estas cookies se instalan automáticamente 
+				en el ordenador empleado por los Socios y Usuarios pero no almacenan ningún 
+				tipo de información relativa a éstos.</p>
+				<p>La Aceitera se compromete a guardar la máxima reserva y confidencialidad 
+				sobre la información que le sea facilitada y a utilizarla únicamente 
+				para los fines indicados.</p>
+				<p>La Aceitera presume que los datos han sido introducidos por su titular o por 
+				persona autorizada por éste, así como que son correctos y 
+				exactos.</p>
+				<p>Corresponde a los Socios la actualización de sus propios datos. 
+				En cualquier momento, el Socio tendrá el derecho de acceso, rectificación, 
+				cancelación y oposición a todos sus datos personales incluidos 
+				en los distintos formularios de alta. Para ejercitar esta facultad el Socio 
+				deberá acceder a <a href="http://www.laaceitera.com" acceskey="w" tabindex="15">www.laaceitera.com</a>, al apartado "Mi Cuenta". 
+				Por lo tanto, el Socio es responsable de la veracidad de los datos y La 
+				Aceitera no será responsable de su inexactitud de los datos personales 
+				de los Socios.</p>
+				<p>Conforme a la legislación vigente en materia de protección 
+				de datos, La Aceitera ha adoptado los niveles de seguridad adecuados a los 
+				datos facilitados por los Socios y, además, ha instalado todos los 
+				medios y medidas a su alcance para evitar la pérdida, mal uso, alteración, 
+				acceso no autorizado y extracción de los mismos.<br></p>
+
+				<!--
+				************************************************
+				*                 PIE de página                *
+				************************************************
+				-->
+				<h3 class="t3"/>
+			</div>
+
+			<p id="pie"> 2016 La Aceitera. 37008 Salamanca</p>
+		</div>
+	</body>
+</html>
