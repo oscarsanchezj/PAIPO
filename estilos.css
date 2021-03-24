@@ -165,6 +165,17 @@ body {
 }	
 
 
+.a:link {
+	color: #FF0000; /*rojo*/
+}
+
+.a:visited {
+	color: #00FF00; /*verde*/
+}
+
+.a:hover {
+	color: #0000FF; /*azul*/
+}
 
 .lista {
 	padding-left: 2em;
