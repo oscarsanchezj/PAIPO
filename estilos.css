@@ -177,8 +177,8 @@ a:visited {
 }
 
 a:active {
-	background: #0000FF; /*azul*/
-	color: #FFFFFF; /*blanco*/
+	background: #2E784D; /*verde*/
+	color: #FFF; /*blanco*/
 }
 
 a:hover {
