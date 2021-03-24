@@ -21,7 +21,7 @@
 				<span id="aceitera">Aceitera</span> 
 				<span id="lema"><br>Tu tienda de aceite en Internet</span>
 			</p>
-			
+
 			<h1 class="t1">Cesta de la compra</h1>
 
 			<!--
@@ -74,6 +74,85 @@
 				</table>
 
 				<p id="info_en" lang="en">Non european customers can request a VAT refund</p>
+			</div>
+			
+
+			<!--
+			************************************************
+			*             DATOS de facturación             *
+			************************************************
+			-->
+
+			<div id="datos">
+				<h2 class="t2">Datos de facturación</h2>
+				<p class="info"> <span class="i">i</span> Los campos marcados en rojo son obligatorios.</p>
+
+				<form action="#">
+					<fieldset id="datos_personales">
+						<legend>Datos personales</legend>
+						<div class="campo_form">
+							<label>Empresa </label>
+							<input id="empresa" name="empresa" type="text" acceskey="e" tabindex="1">
+						</div>
+						<div class="campo_form">
+							<label class="obligatorio">Nombre </label>
+							<input id="nombre" name="nombre" type="text" acceskey="n" tabindex="2">
+						</div>
+						<div class="campo_form">
+							<label class="obligatorio">Apellidos </label>
+							<input id="apellidos" name="apellidos" type="text" acceskey="a" tabindex="3">
+						</div>
+						<div class="campo_form">
+							<label class="obligatorio">e-mail </label>
+							<input id="email" name="email" type="text" acceskey="m" tabindex="4">
+						</div>
+						<div class="campo_form">
+							<label class="obligatorio"><abbr title="Teléfono">Tlf.</abbr> de contacto </label>
+							<input id="tlf" name="tlf" type="text" acceskey="t" tabindex="5">
+						</div>
+						<div class="campo_form">
+							<label><acronym title="Número de identificación fiscal">NIF</acronym>/<acronym title="Código de identificación fiscal">CIF</acronym> </label>
+							<input id="nif" name="nif" type="text" acceskey="i" tabindex="6">
+						</div>
+					</fieldset>
+
+					<fieldset id="datos_envio">
+						<legend>Datos de envío</legend>
+						<div class="campo_form">
+							<label class="obligatorio">Dirección </label>
+							<input id="dir" name="dir" type="text" acceskey="d" tabindex="7">
+						</div>
+						<div class="campo_form">
+							<label class="obligatorio">Localidad </label>
+							<input id="localidad" name="localidad" type="text" acceskey="l" tabindex="8">
+						</div>
+						<div class="campo_form">
+							<label class="obligatorio">Provincia </label>
+							<input id="provincia" name="provincia" type="text" acceskey="p" tabindex="9">
+						</div>
+						<div class="campo_form">
+							<label class="obligatorio"><abbr title="Código postal">CP</abbr> </label>
+							<input id="cp" name="cp" type="text" acceskey="c" tabindex="10">
+						</div>
+						<div class="campo_form">
+							<label>Horario de entrega </label>
+							<select name="horario" acceskey="h" tabindex="11">    
+								<option selected="selected" value="all">Todo el día</option>    
+								<option value="a">De 9:00 a 14:00 horas</option>      
+								<option value="b">De 14:00 a 19:00 horas</option>      
+							</select>
+						</div>
+					</fieldset>
+
+					<fieldset id="observaciones">
+						<legend>Observaciones</legend>
+						<textarea rows="6" cols="80" id="obs" name="obs" acceskey="o" tabindex="12"></textarea>
+					</fieldset>
+
+					<p id="submit">
+						<input value="Realizar Pedido" type="submit" acceskey="r" tabindex="13">
+					</p>
+				</form>
 			</div>
 		</div>
 	</body>
