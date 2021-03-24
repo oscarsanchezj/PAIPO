@@ -164,16 +164,19 @@ body {
 	line-height: 125%;
 }	
 
+a {
+	
+}
 
-.a:link {
+a:link {
 	color: #FF0000; /*rojo*/
 }
 
-.a:visited {
+a:visited {
 	color: #00FF00; /*verde*/
 }
 
-.a:hover {
+a:hover {
 	color: #0000FF; /*azul*/
 }
 
