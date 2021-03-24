@@ -165,19 +165,19 @@ body {
 }	
 
 a {
-	
+
 }
 
 a:link {
-	color: #FF0000; /*rojo*/
+	color: #0000FF; /*azul*/
 }
 
 a:visited {
-	color: #00FF00; /*verde*/
+	color: #572364; /*morado*/
 }
 
 a:hover {
-	color: #0000FF; /*azul*/
+	color: #3B83BD ; /*azul claro*/
 }
 
 .lista {
