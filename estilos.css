@@ -94,6 +94,10 @@ body {
 	border-top: 0.0625em solid #CCC;
 }
 
+#preciototal {
+	text-align: right;
+}
+
 #info_en{
 	font-size: 0.9em;
 	text-align: right;

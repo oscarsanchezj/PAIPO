@@ -38,37 +38,37 @@
 					<caption>Artículos en la cesta</caption>
 					<thead>
 						<tr id="conceptos">
-							<th id="prod">Producto</th>
-							<th id="pvp"><acronym title="Precio de Venta al Público">PVP</acronym></th>
-							<th id="uds"><abbr title="Unidades">Uds.</abbr></th>
-							<th id="eur"><abbr title="Euros">Eur.</abbr></th>
+							<th id="prod" scope="col">Producto</th>
+							<th id="pvp" scope="col"><acronym title="Precio de Venta al Público">PVP</acronym></th>
+							<th id="uds" scope="col"><abbr title="Unidades">Uds.</abbr></th>
+							<th id="eur" scope="col"><abbr title="Euros">Eur.</abbr></th>
 						</tr>
 					</thead>
 
 					<tfoot>
 						<tr id="total">
-							<td colspan="3" align="right"><strong>Precio Total</strong></td>
+							<td id="preciototal" colspan="3" scope="row"><strong>Precio Total</strong></td>
 							<td>242,97 €</td>
 						</tr>
 					</tfoot>
 
 					<tbody>
 						<tr>
-							<td headers="prod"><strong>Botella Oleum 500 ml</strong> (en caja de 12 unidades)</td>
+							<td headers="prod" scope="row"><strong>Botella Oleum 500 ml</strong> (en caja de 12 unidades)</td>
 							<td headers="pvp">45 €</td>
 							<td headers="uds">2</td>
 							<td headers="eur">90 €</td>
 						</tr>
 
 						<tr>
-							<td headers="prod"><strong>Aceitera de cristal Fenicia 500 ml</strong></td>
+							<td headers="prod" scope="row"><strong>Aceitera de cristal Fenicia 500 ml</strong></td>
 							<td headers="pvp">100 €</td>
 							<td headers="uds">1</td>
 							<td headers="eur">100 €</td>
 						</tr>
 
 						<tr>
-							<td headers="prod"><strong>Garrafa Pet 5 litros</strong>(en caja de 3 unidades)</td>
+							<td headers="prod" scope="row"><strong>Garrafa Pet 5 litros</strong>(en caja de 3 unidades)</td>
 							<td headers="pvp">52,97 €</td>
 							<td headers="uds">1</td>
 							<td headers="eur">52,97 €</td>
@@ -88,58 +88,58 @@
 
 			<div id="datos">
 				<h2 class="t2">Datos de facturación</h2>
-				<p class="info"> <span class="i">i</span> Los campos marcados en rojo son obligatorios.</p>
+				<p class="info"> <span class="i">i</span> Los siguientes campos (marcados en rojo) son obligatorios: Nombre, Apellidos, e-mail, <abbr title="Teléfono">Tlf.</abbr> de contacto, Dirección, Localidad, Provincia y <abbr title="Código postal">CP</abbr>.</p>
 
 				<form action="#" id="formulario">
 					<fieldset id="datos_personales">
 						<legend>Datos personales</legend>
 						<div class="campo_form">
-							<label>Empresa </label>
-							<input id="empresa" name="empresa" type="text" tabindex="1"/>
+							<label for="empresa">Empresa </label>
+							<input id="empresa" name="empresa" type="text" title="Nombre de la empresa" tabindex="1"/>
 						</div>
 						<div class="campo_form">
-							<label class="obligatorio">Nombre </label>
-							<input id="nombre" name="nombre" type="text" tabindex="2"/>
+							<label class="obligatorio" for="nombre">Nombre </label>
+							<input id="nombre" name="nombre" type="text" title="Nombre del usuario" tabindex="2"/>
 						</div>
 						<div class="campo_form">
-							<label class="obligatorio">Apellidos </label>
-							<input id="apellidos" name="apellidos" type="text" tabindex="3"/>
+							<label class="obligatorio" for="apellidos">Apellidos </label>
+							<input id="apellidos" name="apellidos" type="text" title="Apellidos del usuario" tabindex="3"/>
 						</div>
 						<div class="campo_form">
-							<label class="obligatorio">e-mail </label>
-							<input id="email" name="email" type="text" tabindex="4"/>
+							<label class="obligatorio" for="email">e-mail </label>
+							<input id="email" name="email" type="text" title="Email" tabindex="4"/>
 						</div>
 						<div class="campo_form">
-							<label class="obligatorio"><abbr title="Teléfono">Tlf.</abbr> de contacto </label>
-							<input id="tlf" name="tlf" type="text" tabindex="5"/>
+							<label class="obligatorio" for="tlf"><abbr title="Teléfono">Tlf.</abbr> de contacto </label>
+							<input id="tlf" name="tlf" type="text" title="Teléfono" tabindex="5"/>
 						</div>
 						<div class="campo_form">
-							<label><acronym title="Número de identificación fiscal">NIF</acronym>/<acronym title="Código de identificación fiscal">CIF</acronym> </label>
-							<input id="nif" name="nif" type="text" tabindex="6"/>
+							<label for="nif"><acronym title="Número de identificación fiscal">NIF</acronym>/<acronym title="Código de identificación fiscal">CIF</acronym> </label>
+							<input id="nif" name="nif" type="text" title="NIF o CIF" tabindex="6"/>
 						</div>
 					</fieldset>
 
 					<fieldset id="datos_envio">
 						<legend>Datos de envío</legend>
 						<div class="campo_form">
-							<label class="obligatorio">Dirección </label>
-							<input id="dir" name="dir" type="text" tabindex="7"/>
+							<label class="obligatorio" for="dir">Dirección </label>
+							<input id="dir" name="dir" type="text" title="Dirección de envío" tabindex="7"/>
 						</div>
 						<div class="campo_form">
-							<label class="obligatorio">Localidad </label>
-							<input id="localidad" name="localidad" type="text" tabindex="8"/>
+							<label class="obligatorio" for="localidad">Localidad </label>
+							<input id="localidad" name="localidad" type="text" title="Localidad de envío" tabindex="8"/>
 						</div>
 						<div class="campo_form">
-							<label class="obligatorio">Provincia </label>
-							<input id="provincia" name="provincia" type="text" tabindex="9"/>
+							<label class="obligatorio" for="provincia">Provincia </label>
+							<input id="provincia" name="provincia" type="text" title="Provincia de envío" tabindex="9"/>
 						</div>
 						<div class="campo_form">
-							<label class="obligatorio"><abbr title="Código postal">CP</abbr> </label>
-							<input id="cp" name="cp" type="text" tabindex="10"/>
+							<label class="obligatorio" for="cp"><abbr title="Código postal">CP</abbr> </label>
+							<input id="cp" name="cp" type="text" title="Código postal de envío" tabindex="10"/>
 						</div>
 						<div class="campo_form">
-							<label>Horario de entrega </label>
-							<select name="horario" tabindex="11">    
+							<label for="horario">Horario de entrega </label>
+							<select name="horario" id="horario" title="Horario de entrega" tabindex="11">    
 								<option selected="selected" value="all">Todo el día</option>    
 								<option value="a">De 9:00 a 14:00 horas</option>      
 								<option value="b">De 14:00 a 19:00 horas</option>      
@@ -149,7 +149,7 @@
 
 					<fieldset id="observaciones">
 						<legend>Observaciones</legend>
-						<textarea rows="6" cols="80" id="obs" name="obs" tabindex="12"></textarea>
+						<textarea rows="6" cols="80" id="obs" name="obs" title="Observaciones del pedido" tabindex="12"></textarea>
 					</fieldset>
 
 					<p id="submit">
@@ -246,15 +246,13 @@
 				datos facilitados<br/>por los Socios y, además, ha instalado todos los 
 				medios y medidas a su<br/>alcance para evitar la pérdida, mal uso, alteración, 
 				acceso no autorizado y<br/>extracción de los mismos.<br/></p>
-
-				<!--
-				************************************************
-				*                 PIE de página                *
-				************************************************
-				-->
-				<h3 class="t3"/>
 			</div>
 
+			<!--
+			************************************************
+			*                 PIE de página                *
+			************************************************
+			-->
 			<p id="pie"> 2016 La Aceitera. 37008 Salamanca</p>
 		</div>
 	</body>
